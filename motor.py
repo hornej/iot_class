@@ -11,7 +11,7 @@ AIN1 = 17
 AIN2 = 24
 
 
-wp.pinMode(PWMPin, 1)
+wp.pinMode(PWMPin, 2)
 wp.pinMode(Standby, 1)
 wp.pinMode(AIN1, 1)
 wp.pinMode(AIN2, 1)
