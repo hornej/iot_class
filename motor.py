@@ -6,19 +6,19 @@ wp.wiringPiSetupGpio()
 
 #configure input and output pins
 PWMPin = 18
-Standy = 4
+Standby = 4
 AIN1 = 17
 AIN2 = 24
 
 
 wp.pinMode(PWMPin, 1)
-wp.pinMode(Standy, 1)
+wp.pinMode(Standby, 1)
 wp.pinMode(AIN1, 1)
 wp.pinMode(AIN2, 1)
 
 try:
    wp.pwmWrite(PWMPin, 250) #pwmWrite() takes input values in the range 0 - 1023
-   wp.digitalWrite(Standy, 1)
+   wp.digitalWrite(Standby, 1)
    wp.digitalWrite(AIN1, 0)
    wp.digitalWrite(AIN2, 1)
    raw_input("Press any key and enter to exit\n")
