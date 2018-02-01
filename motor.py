@@ -18,6 +18,9 @@ wp.pinMode(AIN2, 1)
 
 try:
    wp.pwmWrite(PWMPin, 250) #pwmWrite() takes input values in the range 0 - 1023
+   wp.digitalWrite(Standy, 1)
+   wp.digitalWrite(AIN1, 0)
+   wp.digitalWrite(AIN2, 1)
    raw_input("Press any key and enter to exit\n")
    
 except:
@@ -26,5 +29,4 @@ finally:
    #clean up
    print("\nexiting")
    wp.pinMode(PWMPin, 0)
-   wp.pinMode(DirectionPin, 0)
    exit(0)
