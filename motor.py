@@ -18,7 +18,7 @@ wp.pinMode(AIN1, 1)
 wp.pinMode(AIN2, 1)
 
 try:
-   raw_input("Press any key and enter to exit\n")
+   ##raw_input("Press any key and enter to exit\n")
    
    while True:
       for x in range(0, 1000):
@@ -27,6 +27,7 @@ try:
          wp.digitalWrite(AIN1, 0)
          wp.digitalWrite(AIN2, 1)
          time.sleep(.1)
+         print(x)
          
       wp.digitalWrite(Standby, 0)
       time.sleep(1)
