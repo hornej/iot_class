@@ -17,7 +17,7 @@ wp.pinMode(AIN1, 1)
 wp.pinMode(AIN2, 1)
 
 try:
-   wp.pwmWrite(PWMPin, 250) #pwmWrite() takes input values in the range 0 - 1023
+   wp.pwmWrite(PWMPin, 1000) #pwmWrite() takes input values in the range 0 - 1023
    wp.digitalWrite(Standby, 1)
    wp.digitalWrite(AIN1, 0)
    wp.digitalWrite(AIN2, 1)
