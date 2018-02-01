@@ -27,9 +27,10 @@ try:
       for x in range(0, 800):
          wp.pwmWrite(PWMPin, x) #pwmWrite() takes input values in the range 0 - 1023
          time.sleep(.01)
-         print(x)
          
       wp.digitalWrite(Standby, 0)
+      wp.digitalWrite(AIN1, 0)
+      wp.digitalWrite(AIN2, 0)
       time.sleep(5)
 
       wp.digitalWrite(Standby, 1)
@@ -40,6 +41,8 @@ try:
          time.sleep(.01)
          
       wp.digitalWrite(Standby, 0)
+      wp.digitalWrite(AIN1, 0)
+      wp.digitalWrite(AIN2, 0)
       time.sleep(5)
       
       
